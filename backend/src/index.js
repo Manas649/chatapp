@@ -20,7 +20,11 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: [
+      "http://localhost:5173",
+      "https://chatapp-six-sepia.vercel.app",
+      "https://chatapp-6g1196bcz-manas649s-projects.vercel.app",
+    ],
     credentials: true,
   })
 );
